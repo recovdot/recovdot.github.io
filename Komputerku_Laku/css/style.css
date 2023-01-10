@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-padding: 200;
+    scroll-behavior: smooth;
+
+    /* Font-size */
+    --small-font: 12px;
+    --medium-font: 16px;
+    --big-font: 24px;
+    --large-font: 32px;
+}
+
+body {
+    background-color: white;
+}
+
+.small-font {
+    font-size: var(--small-font);
+}
+
+.medium-font {
+    font-size: var(--medium-font);
+}
+
+.big-font {
+    font-size: var(--big-font);
+}
+
+.large-font {
+    font-size: var(--large-font);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.txt-top-space {
+    margin-top: 40px;
+}
+
+.txt-btm-space {
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.053);
+    z-index: 1;
+}
+
+nav {
+    z-index: 99;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: .4s ease;
+}
+
+nav li a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.logo {
+    z-index: 1;
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+
+.logo-p {
+    display: flex;
+    align-items: center;
+    float: left;
+    font-family: 'Poppins SemiBold';
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: .4s ease;
+}
+
+.logo-p:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.logo-p:hover .logo:hover {
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    float: right;
+}
+
+.profile-p {
+    color: black;
+    padding-right: 16px;
+}
+
+.profile img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+}
+
+.home-description {
+    width: 300px;
+    height: 30px;
+    margin: -420px 15%;
+    position: absolute;
+    z-index: 0;
+}
+
+.home-img {
+    background-image: url('https://www.intel.com/content/dam/www/central-libraries/us/en/images/rog-strix-z390-e-gaming-motherboard-rwd.png.rendition.intel.web.864.486.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: right;
+    height: 600px;
+}
+
+.button {
+    border-radius: 10px;
+    border-style: none;
+    background-color: red;
+    padding: 8px;
+    margin-top: 2px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    transition: .4s ease;
+}
+
+.button a {
+    font-size: var(--medium-font);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.237);
+}
+
+.generic-container {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.spare-space {
+    margin-top: 300px;
+    margin-bottom: 250px;
+}
+
+.spare-container {
+    padding: 0 5%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    object-fit: contain; 
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.237);
+    padding: 16px;
+    background-color: #F7F7F7;
+    transition: .4s ease;
+}
+
+
+.cards p {
+    font-size: var(--big-font);
+    font-family: 'Poppins SemiBold';
+    text-align: center;
+}
+
+.cards img {
+    object-fit: fill;
+    width: 275px;
+    height: 230px;
+    padding-bottom: 20px;
+}
+
+.cards:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+.cart-button {
+    border-radius: 5rem;
+    padding: 0.5rem;
+    background-color: white;
+    font-family: 'Poppins SemiBold';
+}
+
+.cart-button:hover {
+    transition: 0.5 ease;
+    background-color: greenyellow;
+    color: white;
+    cursor: pointer;
+}
+
+.vertical-center {
+    vertical-align: middle;
+}
+
+.shopping-cart {
+    /* width: 750px; */
+    width: 80%;
+    height: 423px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    /* color: #5E6977; */
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+}
+   
+  .item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+  .delete-btn,
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+  }
+.delete-btn {
+    width: 18px;
+    height: 17px;
+    border-style: none;
+    font-size: 24px;
+    background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+}
+   
+.like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: url('img/heart.png');
+    border-style: none;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+}
+
+.image {
+    width: 10%;
+    padding-top: 10px;
+    margin-right: 60px;
+}
+
+.description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+}
+
+.quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+    margin-left: auto;
+
+  }
+  .quantity input {
+    /* -webkit-appearance: none; */
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn img {
+    margin-bottom: 3px;
+  }
+  .plus-btn img {
+    margin-top: 2px;
+  }
+   
+  button:focus,
+  input:focus {
+    outline:0;
+}
+
+.total-price {
+    /* width: 83px; */
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.is-active {
+    animation-name: animate;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(28);
+    animation-fill-mode: forwards;
+  }
+   
+  @keyframes animate {
+    0%   { background-position: left;  }
+    50%  { background-position: right; }
+    100% { background-position: right; }
+  }
+
+  .dlt-btn i {
+    border-style: none;
+    font-size: 46px;
+  }
+
+  input.qtyplus { width:25px; height:25px;}
+  input.qtyminus { width:25px; height:25px;}
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    /* background-color: #4CAF50; */
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5 ease;
+  }
+  
+  input[type=submit]:hover {
+    /* background-color: #45a049; */
+    background-color: #4CAF50;
+  }
+
+.contact-logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.contact-space {
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+.contact-description p, h4 {
+    text-align: center;
+}
+
+.contact-sosmed {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: 0.5rem;
+    text-decoration: none!important;
+}
+
+.contact-sosmed i {
+    color: black;
+    transition: 0.5 ease;
+}
+
+.contact-sosmed i:hover {
+    color: red;
+    transform: scale(1.1);
+}
